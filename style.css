@@ -2,6 +2,14 @@
   max-width: 1760px;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .devo-navbar {
   margin: 90px 0px;
 }
@@ -10,20 +18,26 @@
   justify-content: space-between;
 }
 
+.mytabs {
+  margin-bottom: 60px;
+}
 .mytabs .mytabs-content {
-  box-shadow: 0px 3px 3px 1px #e3e3e3;
+  box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 6px;
+  padding: 30px;
 }
 .mytabs .mytabs-content ul {
   display: flex;
   justify-content: space-between;
   margin: 0px 20px;
 }
-.mytabs .mytabs-content ul button {
+.mytabs .mytabs-content ul a {
   position: relative;
   color: #8e8e8e;
   font-size: 20px;
 }
-.mytabs .mytabs-content ul button.active:after {
+.mytabs .mytabs-content ul a.active:after {
   content: "";
   display: block;
   position: absolute;
@@ -33,7 +47,60 @@
   border-radius: 20px;
   background-color: #5156be;
 }
-.mytabs .mytabs-content .nav-pills .nav-link.active {
+.mytabs .mytabs-content .active {
   color: #5156be;
   background-color: transparent;
+}
+
+@media (max-width: 900px) {
+  .navbar-content .hello-content {
+    display: none;
+  }
+  .mytabs-content {
+    padding: 20px !important;
+  }
+  .mytabs-content ul {
+    overflow-x: scroll;
+  }
+  .mytabs-content ul a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .mytabs-content a {
+    margin: 0px 20px;
+  }
+}
+.content .mycard {
+  box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 6px;
+  padding: 25px 15px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .mycard .card-content {
+  display: flex;
+  flex-direction: column;
+}
+.content .mycard .card-content span {
+  font-size: 20px;
+  color: #272c8c;
+}
+.content .mycard .card-content p {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+.content .mycard:hover {
+  background-color: #7e83cd;
+}
+.content .mycard:hover .card-content span,
+.content .mycard:hover .card-content p {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

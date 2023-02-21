@@ -2,11 +2,20 @@ $main-color: #7e83cd;
 $second-color: #fff;
 $main-text-color: #5156be;
 $second-text-color: #8e8e8e;
-
+$third-text-color: #272c8c;
+$shadow-color: #00000033;
+$border-color: #0000001a;
 //global style
 .container-fluid {
   max-width: 1760px;
 }
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
 .devo-navbar {
   margin: 90px 0px;
   .navbar-content {
@@ -15,18 +24,22 @@ $second-text-color: #8e8e8e;
   }
 }
 .mytabs {
+  margin-bottom: 60px;
   .mytabs-content {
-    box-shadow: 0px 3px 3px 1px #e3e3e3;
+    box-shadow: 0px 5px 15px -4px $shadow-color;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    padding: 30px;
     ul {
       display: flex;
       justify-content: space-between;
       margin: 0px 20px;
-      button {
+      a {
         position: relative;
         color: $second-text-color;
         font-size: 20px;
       }
-      button.active:after {
+      a.active:after {
         content: "";
         display: block;
         position: absolute;
@@ -37,9 +50,71 @@ $second-text-color: #8e8e8e;
         background-color: $main-text-color;
       }
     }
-    .nav-pills .nav-link.active {
+    .active {
       color: $main-text-color;
       background-color: transparent;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .navbar-content {
+    .hello-content {
+      display: none;
+    }
+  }
+  .mytabs-content {
+    padding: 20px !important;
+    ul {
+      overflow-x: scroll;
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        // margin: 0px 30px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .mytabs-content {
+    a {
+      margin: 0px 20px;
+    }
+  }
+}
+
+.content {
+  .mycard {
+    box-shadow: 0px 0px 15px -4px $shadow-color;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    padding: 25px 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 20px;
+        color: $third-text-color;
+      }
+      p {
+        font-size: 12px;
+        color: $second-text-color;
+      }
+    }
+  }
+  .mycard:hover {
+    background-color: $main-color;
+    .card-content {
+      span,
+      p {
+        color: $second-color;
+      }
     }
   }
 }
