@@ -44,7 +44,7 @@ a {
   margin-bottom: 60px;
 }
 .mytabs .mytabs-content {
-  box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 9px -4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   padding: 30px;
 }
@@ -97,6 +97,7 @@ a {
   background-color: white;
 }
 .menu .menu-content ul {
+  padding: 0;
   margin: 20px 0px;
 }
 .menu .menu-content ul li {
@@ -104,7 +105,7 @@ a {
   align-items: center;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 4px 3px -4px rgba(0, 0, 0, 0.2);
 }
 .menu .menu-content ul li a {
   color: #8e8e8e;
@@ -162,7 +163,7 @@ a {
   }
 }
 .content .mycard {
-  box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 9px -4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   padding: 25px 15px;
   display: flex;
@@ -187,5 +188,50 @@ a {
 }
 .content .mycard:hover .card-content span,
 .content .mycard:hover .card-content p {
+  color: #fff;
+}
+
+.card-exam {
+  box-shadow: 0px 0px 9px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 25px 15px;
+  margin-bottom: 20px;
+}
+.card-exam .card-exam-content {
+  display: flex;
+  flex-direction: column;
+}
+.card-exam .card-exam-content .exam-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-exam .card-exam-content .exam-name span {
+  font-size: 20px;
+  color: #272c8c;
+}
+.card-exam .card-exam-content .exam-name p {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+.card-exam .card-exam-content .exam-info {
+  display: flex;
+  justify-content: space-between;
+  color: #272c8c;
+}
+.card-exam .card-exam-content .exam-info span {
+  display: flex;
+  align-items: center;
+}
+.card-exam .card-exam-content .exam-info span i {
+  margin: 5px;
+}
+
+.card-exam:hover {
+  background-color: #7e83cd;
+}
+.card-exam:hover .card-exam-content span,
+.card-exam:hover .card-exam-content p,
+.card-exam:hover .card-exam-content i {
   color: #fff;
 }/*# sourceMappingURL=style.css.map */

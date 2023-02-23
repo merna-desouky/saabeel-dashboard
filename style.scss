@@ -51,7 +51,7 @@ a {
 .mytabs {
   margin-bottom: 60px;
   .mytabs-content {
-    box-shadow: 0px 5px 15px -4px $shadow-color;
+    box-shadow: 0px 2px 9px -4px $shadow-color;
     border-radius: 6px;
     padding: 30px;
     ul {
@@ -105,13 +105,14 @@ a {
   }
   .menu-content {
     ul {
+      padding: 0;
       margin: 20px 0px;
       li {
         display: flex;
         align-items: center;
         padding: 20px;
         margin-bottom: 20px;
-        box-shadow: 0px 5px 10px -4px $shadow-color;
+        box-shadow: -1px 4px 3px -4px $shadow-color;
         a {
           color: $second-text-color;
           font-size: 20px;
@@ -177,7 +178,7 @@ a {
 
 .content {
   .mycard {
-    box-shadow: 0px 0px 15px -4px $shadow-color;
+    box-shadow: 0px 0px 9px -4px $shadow-color;
     border-radius: 6px;
     padding: 25px 15px;
     display: flex;
@@ -204,6 +205,53 @@ a {
       p {
         color: $second-color;
       }
+    }
+  }
+}
+.card-exam {
+  box-shadow: 0px 0px 9px -4px $shadow-color;
+  border-radius: 6px;
+  padding: 25px 15px;
+  margin-bottom: 20px;
+
+  .card-exam-content {
+    display: flex;
+    flex-direction: column;
+
+    .exam-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-size: 20px;
+        color: $third-text-color;
+      }
+      p {
+        font-size: 12px;
+        color: $second-text-color;
+      }
+    }
+    .exam-info {
+      display: flex;
+      justify-content: space-between;
+      color: $third-text-color;
+      span {
+        display: flex;
+        align-items: center;
+        i {
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+.card-exam:hover {
+  background-color: $main-color;
+  .card-exam-content {
+    span,
+    p,
+    i {
+      color: $second-color;
     }
   }
 }
