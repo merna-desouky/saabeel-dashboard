@@ -1,3 +1,7 @@
+body {
+  background-color: #f9f9f9;
+}
+
 .container-fluid {
   max-width: 1760px;
 }
@@ -11,11 +15,29 @@ a {
 }
 
 .devo-navbar {
-  margin: 90px 0px;
+  margin: 60px 0px;
+}
+.devo-navbar .mob-menu {
+  display: none;
 }
 .devo-navbar .navbar-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.devo-navbar .navbar-content .hello-content h3 {
+  margin-top: 10px;
+}
+.devo-navbar .navbar-content .profile-info {
+  display: flex;
+  align-items: center;
+}
+.devo-navbar .navbar-content .profile-info i {
+  font-size: 40px;
+  color: #707070;
+}
+.devo-navbar .navbar-content .profile-info img {
+  height: 40px;
 }
 
 .mytabs {
@@ -23,7 +45,6 @@ a {
 }
 .mytabs .mytabs-content {
   box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 6px;
   padding: 30px;
 }
@@ -41,8 +62,8 @@ a {
   content: "";
   display: block;
   position: absolute;
-  margin: 5px 9px;
-  width: 50%;
+  margin: 25px 12px;
+  width: 60%;
   height: 4px;
   border-radius: 20px;
   background-color: #5156be;
@@ -52,36 +73,100 @@ a {
   background-color: transparent;
 }
 
+.menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.menu .background-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 35, 53, 0.4);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.menu .sidenav {
+  position: fixed;
+  transform: translateX(500px);
+  transition: all 0.5s ease-in-out;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+}
+.menu .menu-content ul {
+  margin: 20px 0px;
+}
+.menu .menu-content ul li {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.2);
+}
+.menu .menu-content ul li a {
+  color: #8e8e8e;
+  font-size: 20px;
+}
+.menu .menu-content ul li .closebtn {
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+}
+.menu .menu-content ul li:hover {
+  background-color: #7e83cd;
+}
+.menu .menu-content ul li:hover a {
+  color: #fff;
+}
+
+.openNav {
+  z-index: 11;
+  visibility: visible !important;
+}
+
+.openNav .background-overlay {
+  opacity: 1;
+}
+
+.openNav .sidenav {
+  transform: translateX(0);
+}
+
 @media (max-width: 900px) {
-  .navbar-content .hello-content {
+  .mytabs {
     display: none;
   }
-  .mytabs-content {
-    padding: 20px !important;
-  }
-  .mytabs-content ul {
-    overflow-x: scroll;
-  }
-  .mytabs-content ul a {
+  .devo-navbar .navbar-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     justify-content: center;
   }
-}
-@media (max-width: 700px) {
-  .mytabs-content a {
-    margin: 0px 20px;
+  .devo-navbar .navbar-content .hello-content {
+    display: none;
+  }
+  .devo-navbar .navbar-content .logo {
+    margin-bottom: 60px;
+  }
+  .devo-navbar .navbar-content .profile-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .devo-navbar .navbar-content .profile-info .profile {
+    display: none;
+  }
+  .devo-navbar .navbar-content .profile-info .mob-menu {
+    display: flex;
   }
 }
 .content .mycard {
   box-shadow: 0px 0px 15px -4px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-radius: 6px;
   padding: 25px 15px;
-  margin: 10px;
   display: flex;
+  margin-bottom: 20px;
   justify-content: space-between;
   align-items: center;
 }
