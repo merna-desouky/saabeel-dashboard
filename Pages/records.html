@@ -40,19 +40,70 @@
                     <span>صباح الخير</span>
                     <h3>مرحبًا بكِ يا مريم</h3>
                   </div>
-                  <div>
-                    <a><img src="./../assets/images/logo.svg" /></a>
+                  <div class="logo">
+                    <a><img src="./../assets//images/logo.svg" /></a>
                   </div>
                   <div class="profile-info">
-                    <a class="me-4">
-                      <img src="./../assets/images/notif.svg"
+                    <a class="me-4"><i class="fa-regular fa-bell"></i></a>
+                    <a class="profile"
+                      ><img src="./../assets/images/profilePic.svg"
                     /></a>
-                    <a><img src="./../assets/images/profilePic.svg" /></a>
+                    <div class="mob-menu">
+                      <i class="fa-solid fa-bars" onclick="openNav()"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- start of sidemenu -->
+          <div id="menu" class="menu" style="visibility: hidden">
+            <div class="background-overlay" onclick="closeNav()"></div>
+            <div id="mySidenav" class="sidenav">
+              <div class="menu-content">
+                <ul>
+                  <li>
+                    <a href="./index.html" class="active">
+                      <i class="fa-solid fa-house"></i>
+                      الرئيسية
+                    </a>
+                    <a
+                      href="javascript:void(0)"
+                      class="closebtn"
+                      onclick="closeNav()"
+                      >&times;</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./Pages/subjects.html">
+                      <i class="fa-solid fa-book-open"></i>
+
+                      المواد
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./Pages/records.html">
+                      <i class="fa-solid fa-microphone"></i>
+                      التسجيلات الصوتية
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./Pages/exams.html">
+                      <i class="fa-solid fa-table-list"></i>
+                      اختبارات النظام
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./Pages/results.html">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                      نتائج الاختبارات
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end of sidemenu -->
         </div>
       </nav>
     </header>
@@ -82,7 +133,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="./exams.html">
+                  <a href="./subjects.html">
                     <i class="fa-solid fa-table-list"></i>
                     اختبارات النظام
                   </a>
@@ -99,6 +150,75 @@
         </div>
       </div>
     </div>
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>المحاسبة الإدارية 2023</span>
+                <p>جميع المواضيع الخاصة بـ محاسبة الضرائب 2023</p>
+              </div>
+              <div><img src="./../assets/images/Group 328.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>محاسبة الضرائب 2023</span>
+                <p>اضغط هنا لمشاهدة جميع المواد الخاصة بك</p>
+              </div>
+              <div><img src="./../assets/images/Group 328.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>محاسبة دولية</span>
+                <p>اضغط هنا لمشاهدة جميع المواد الخاصة بك</p>
+              </div>
+              <div><img src="./../assets/images/Group 328.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>محاسبة الضرائب 2023</span>
+                <p>اضغط هنا لمشاهدة جميع المواد الخاصة بك</p>
+              </div>
+              <div><img src="./../assets/images/Group 328.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>المحاسبة الضريبية 2 </span>
+                <p>اضغط هنا لمشاهدة جميع المواد الخاصة بك</p>
+              </div>
+              <div><img src="./../assets/images/Group 328.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>نظم المعلومات</span>
+                <p>اضغط هنا لمشاهدة جميع المواد الخاصة بك</p>
+              </div>
+              <div><img src="./../assets/images/Group 328.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>نظم المعلومات</span>
+                <p>اضغط هنا لمشاهدة جميع المواد الخاصة بك</p>
+              </div>
+              <div><img src="./../assets/images/Group 328.svg" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- js for bootstrap -->
     <script
@@ -107,5 +227,14 @@
       crossorigin="anonymous"
     ></script>
     <!-- js for bootstrap -->
+    <script>
+      function openNav() {
+        document.getElementById("menu").classList.add("openNav");
+      }
+
+      function closeNav() {
+        document.getElementById("menu").classList.remove("openNav");
+      }
+    </script>
   </body>
 </html>
