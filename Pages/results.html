@@ -40,19 +40,72 @@
                     <span>صباح الخير</span>
                     <h3>مرحبًا بكِ يا مريم</h3>
                   </div>
-                  <div>
+
+                  <div class="mob-menu">
+                    <i class="fa-solid fa-bars" onclick="openNav()"></i>
+                  </div>
+                  <div class="logo">
                     <a><img src="./../assets/images/logo.svg" /></a>
                   </div>
                   <div class="profile-info">
-                    <a class="me-4">
-                      <img src="./../assets/images/notif.svg"
+                    <a class="notif me-4"><i class="fa-regular fa-bell"></i></a>
+
+                    <a class="profile"
+                      ><img src="./../assets/images/profilePic.svg"
                     /></a>
-                    <a><img src="./../assets/images/profilePic.svg" /></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- start of sidemenu -->
+          <div id="menu" class="menu" style="visibility: hidden">
+            <div class="background-overlay" onclick="closeNav()"></div>
+            <div id="mySidenav" class="sidenav">
+              <div class="menu-content">
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav()"
+                  >&times;</a
+                >
+                <ul>
+                  <li>
+                    <a href="./../index.html" class="active">
+                      <i class="fa-solid fa-house"></i>
+                      الرئيسية
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./subjects.html">
+                      <i class="fa-solid fa-book-open"></i>
+
+                      المواد
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./records.html">
+                      <i class="fa-solid fa-microphone"></i>
+                      التسجيلات الصوتية
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./exams.html">
+                      <i class="fa-solid fa-table-list"></i>
+                      اختبارات النظام
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./results.html">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                      نتائج الاختبارات
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end of sidemenu -->
         </div>
       </nav>
     </header>
@@ -99,6 +152,166 @@
         </div>
       </div>
     </div>
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <h4 class="mb-4">اختر المادة</h4>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>المحاسبة الإدارية 2023</span>
+              </div>
+              <div><img src="./../assets/images/Group 331.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>محاسبة الضرائب 2023</span>
+              </div>
+              <div><img src="./../assets/images/Group 331.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>محاسبة دولية</span>
+              </div>
+              <div><img src="./../assets/images/Group 331.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>محاسبة الضرائب 2023</span>
+              </div>
+              <div><img src="./../assets/images/Group 331.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>محاسبة الضرائب 2023</span>
+              </div>
+              <div><img src="./../assets/images/Group 331.svg" /></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="mycard">
+              <div class="card-content">
+                <span>محاسبة الضرائب 2023</span>
+              </div>
+              <div><img src="./../assets/images/Group 331.svg" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h4 class="mb-4 mt-5">آخر نتائج الإختبارات</h4>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="card-exam">
+              <div class="card-exam-content">
+                <div class="exam-name">
+                  <div>
+                    <span> اختبار شامل</span>
+                    <p><a>المحاسبة الإدارية 2023</a></p>
+                  </div>
+                  <div><img src="./../assets/images/Group 335.svg" /></div>
+                </div>
+                <div class="exam-info">
+                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="card-exam">
+              <div class="card-exam-content">
+                <div class="exam-name">
+                  <div>
+                    <span> اختبار شامل</span>
+                    <p><a>المحاسبة الإدارية 2023</a></p>
+                  </div>
+                  <div><img src="./../assets/images/Group 335.svg" /></div>
+                </div>
+                <div class="exam-info">
+                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="card-exam">
+              <div class="card-exam-content">
+                <div class="exam-name">
+                  <div>
+                    <span> اختبار شامل</span>
+                    <p><a>المحاسبة الإدارية 2023</a></p>
+                  </div>
+                  <div><img src="./../assets/images/Group 335.svg" /></div>
+                </div>
+                <div class="exam-info">
+                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="card-exam">
+              <div class="card-exam-content">
+                <div class="exam-name">
+                  <div>
+                    <span> اختبار شامل</span>
+                    <p><a>المحاسبة الإدارية 2023</a></p>
+                  </div>
+                  <div><img src="./../assets/images/Group 335.svg" /></div>
+                </div>
+                <div class="exam-info">
+                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="card-exam">
+              <div class="card-exam-content">
+                <div class="exam-name">
+                  <div>
+                    <span> اختبار شامل</span>
+                    <p><a>المحاسبة الإدارية 2023</a></p>
+                  </div>
+                  <div><img src="./../assets/images/Group 335.svg" /></div>
+                </div>
+                <div class="exam-info">
+                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="card-exam">
+              <div class="card-exam-content">
+                <div class="exam-name">
+                  <div>
+                    <span> اختبار شامل</span>
+                    <p><a>المحاسبة الإدارية 2023</a></p>
+                  </div>
+                  <div><img src="./../assets/images/Group 335.svg" /></div>
+                </div>
+                <div class="exam-info">
+                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- js for bootstrap -->
     <script
@@ -107,5 +320,14 @@
       crossorigin="anonymous"
     ></script>
     <!-- js for bootstrap -->
+    <script>
+      function openNav() {
+        document.getElementById("menu").classList.add("openNav");
+      }
+
+      function closeNav() {
+        document.getElementById("menu").classList.remove("openNav");
+      }
+    </script>
   </body>
 </html>

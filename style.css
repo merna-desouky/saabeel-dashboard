@@ -96,9 +96,18 @@ a {
   height: 100%;
   background-color: white;
 }
+.menu .menu-content .closebtn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  font-size: 25px;
+  color: #8e8e8e;
+}
 .menu .menu-content ul {
   padding: 0;
-  margin: 20px 0px;
+  margin-bottom: 20px;
 }
 .menu .menu-content ul li {
   display: flex;
@@ -110,10 +119,6 @@ a {
 .menu .menu-content ul li a {
   color: #8e8e8e;
   font-size: 20px;
-}
-.menu .menu-content ul li .closebtn {
-  -webkit-margin-start: auto;
-          margin-inline-start: auto;
 }
 .menu .menu-content ul li:hover {
   background-color: #7e83cd;
@@ -141,26 +146,32 @@ a {
   }
   .devo-navbar .navbar-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   .devo-navbar .navbar-content .hello-content {
     display: none;
   }
-  .devo-navbar .navbar-content .logo {
-    margin-bottom: 60px;
-  }
-  .devo-navbar .navbar-content .profile-info {
+  .devo-navbar .navbar-content .mob-menu {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    font-size: 25px;
+    color: #707070;
   }
   .devo-navbar .navbar-content .profile-info .profile {
     display: none;
   }
-  .devo-navbar .navbar-content .profile-info .mob-menu {
+  .devo-navbar .navbar-content .profile-info .notif {
     display: flex;
+    margin: 0 !important;
   }
+  .devo-navbar .navbar-content .profile-info .notif i {
+    font-size: 25px;
+    color: #707070;
+  }
+}
+.content {
+  margin-bottom: 60px;
 }
 .content .mycard {
   box-shadow: 0px 0px 9px -4px rgba(0, 0, 0, 0.2);
@@ -234,4 +245,19 @@ a {
 .card-exam:hover .card-exam-content p,
 .card-exam:hover .card-exam-content i {
   color: #fff;
+}
+
+.myvid {
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 60px;
+  box-shadow: 0px 2px 9px -4px rgba(0, 0, 0, 0.2);
+}
+
+.vid-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0px 2px 9px -4px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=style.css.map */
