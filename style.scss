@@ -196,6 +196,12 @@ a {
         .notif {
           display: flex;
           margin: 0 !important;
+
+          .notif-count {
+            width: 25px;
+            height: 25px;
+            bottom: 17px;
+          }
           i {
             font-size: 25px;
             color: $notif-color;

@@ -183,6 +183,11 @@ a {
     display: flex;
     margin: 0 !important;
   }
+  .devo-navbar .navbar-content .profile-info .notif .notif-count {
+    width: 25px;
+    height: 25px;
+    bottom: 17px;
+  }
   .devo-navbar .navbar-content .profile-info .notif i {
     font-size: 25px;
     color: #707070;
