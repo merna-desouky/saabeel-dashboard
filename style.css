@@ -1,5 +1,6 @@
 body {
   background-color: #f9f9f9;
+  font-family: "Alexandria", sans-serif;
 }
 
 .container-fluid {
@@ -46,7 +47,8 @@ a {
 .mytabs .mytabs-content {
   box-shadow: 0px 2px 9px -4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  padding: 30px;
+  background-color: #ffffff;
+  padding: 20px;
 }
 .mytabs .mytabs-content ul {
   display: flex;
@@ -62,7 +64,7 @@ a {
   content: "";
   display: block;
   position: absolute;
-  margin: 25px 12px;
+  margin: 20px 12px;
   width: 60%;
   height: 4px;
   border-radius: 20px;
@@ -94,14 +96,12 @@ a {
   transition: all 0.5s ease-in-out;
   width: 300px;
   height: 100%;
-  background-color: white;
+  background-color: #ffffff;
 }
 .menu .menu-content .closebtn {
-  margin-top: 10px;
-  display: flex;
-  justify-content: flex-end;
-  -webkit-margin-end: 15px;
-          margin-inline-end: 15px;
+  display: inline;
+  -webkit-margin-start: 260px;
+          margin-inline-start: 260px;
   font-size: 25px;
   color: #8e8e8e;
 }
@@ -109,22 +109,22 @@ a {
   padding: 0;
   margin-bottom: 20px;
 }
-.menu .menu-content ul li {
+.menu .menu-content ul a {
   display: flex;
   align-items: center;
   padding: 20px;
-  margin-bottom: 20px;
   box-shadow: -1px 4px 3px -4px rgba(0, 0, 0, 0.2);
-}
-.menu .menu-content ul li a {
   color: #8e8e8e;
+  background-color: #ffffff;
   font-size: 20px;
 }
-.menu .menu-content ul li:hover {
-  background-color: #7e83cd;
+.menu .menu-content ul a i {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
 }
-.menu .menu-content ul li:hover a {
-  color: #fff;
+.menu .menu-content ul a:hover {
+  background-color: #7e83cd;
+  color: #ffffff;
 }
 
 .openNav {
@@ -176,6 +176,7 @@ a {
 .content .mycard {
   box-shadow: 0px 0px 9px -4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  background-color: #ffffff;
   padding: 25px 15px;
   display: flex;
   margin-bottom: 20px;
@@ -199,12 +200,13 @@ a {
 }
 .content .mycard:hover .card-content span,
 .content .mycard:hover .card-content p {
-  color: #fff;
+  color: #ffffff;
 }
 
 .card-exam {
   box-shadow: 0px 0px 9px -4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  background-color: #ffffff;
   padding: 25px 15px;
   margin-bottom: 20px;
 }
@@ -244,20 +246,88 @@ a {
 .card-exam:hover .card-exam-content span,
 .card-exam:hover .card-exam-content p,
 .card-exam:hover .card-exam-content i {
-  color: #fff;
+  color: #ffffff;
 }
 
 .myvid {
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   margin-bottom: 60px;
-  box-shadow: 0px 2px 9px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 9px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: #ffffff;
 }
 
 .vid-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  box-shadow: 0px 2px 9px -4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 60px;
+  box-shadow: 0px 0px 9px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .vid-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .vid-info span {
+    margin: 10px;
+  }
+}
+.mytextarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.mytextarea textarea {
+  border: none;
+  box-shadow: 0px 0px 9px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+.mytextarea textarea::-moz-placeholder {
+  padding: 20px;
+}
+.mytextarea textarea::placeholder {
+  padding: 20px;
+}
+.mytextarea textarea:focus-visible {
+  outline: #8e8e8e auto 1px;
+}
+.mytextarea input {
+  width: 190px;
+  height: 40px;
+  background-color: #7e83cd;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+}
+.mytextarea input:hover {
+  background-color: #5156be;
+}
+
+.notes h5 {
+  color: #272c8c;
+}
+.notes .myquestion {
+  padding: 20px;
+  box-shadow: 0px 0px 9px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+.notes .myquestion .Q {
+  margin-bottom: 30px;
+  color: #707070;
+}
+.notes .myquestion .Q b {
+  color: #000000;
+}
+.notes .myquestion .answer {
+  color: #272c8c;
 }/*# sourceMappingURL=style.css.map */

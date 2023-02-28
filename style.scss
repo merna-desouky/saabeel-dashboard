@@ -1,15 +1,17 @@
 $main-color: #7e83cd;
-$second-color: #fff;
+$second-color: #ffffff;
 $background-color: #f9f9f9;
 $notif-color: #707070;
 $main-text-color: #5156be;
 $second-text-color: #8e8e8e;
 $third-text-color: #272c8c;
+$fourth-text-color: #000000;
 $shadow-color: #00000033;
 $border-color: #0000001a;
 //global style
 body {
   background-color: $background-color;
+  font-family: "Alexandria", sans-serif;
 }
 .container-fluid {
   max-width: 1760px;
@@ -54,7 +56,8 @@ a {
   .mytabs-content {
     box-shadow: 0px 2px 9px -4px $shadow-color;
     border-radius: 6px;
-    padding: 30px;
+    background-color: $second-color;
+    padding: 20px;
     ul {
       display: flex;
       justify-content: space-between;
@@ -68,7 +71,7 @@ a {
         content: "";
         display: block;
         position: absolute;
-        margin: 25px 12px;
+        margin: 20px 12px;
         width: 60%;
         height: 4px;
         border-radius: 20px;
@@ -102,36 +105,35 @@ a {
     transition: all 0.5s ease-in-out;
     width: 300px;
     height: 100%;
-    background-color: white;
+    background-color: $second-color;
   }
   .menu-content {
     .closebtn {
-      margin-top: 10px;
-      display: flex;
-      justify-content: flex-end;
-      margin-inline-end: 15px;
+      // margin-top: 10px;
+      display: inline;
+      margin-inline-start: 260px;
       font-size: 25px;
       color: $second-text-color;
     }
     ul {
       padding: 0;
       margin-bottom: 20px;
-      li {
+
+      a {
         display: flex;
         align-items: center;
         padding: 20px;
-        margin-bottom: 20px;
         box-shadow: -1px 4px 3px -4px $shadow-color;
-        a {
-          color: $second-text-color;
-          font-size: 20px;
+        color: $second-text-color;
+        background-color: $second-color;
+        font-size: 20px;
+        i {
+          margin-inline-end: 10px;
         }
       }
-      li:hover {
+      a:hover {
         background-color: $main-color;
-        a {
-          color: $second-color;
-        }
+        color: $second-color;
       }
     }
   }
@@ -193,6 +195,7 @@ a {
   .mycard {
     box-shadow: 0px 0px 9px -4px $shadow-color;
     border-radius: 6px;
+    background-color: $second-color;
     padding: 25px 15px;
     display: flex;
     margin-bottom: 20px;
@@ -225,6 +228,7 @@ a {
 .card-exam {
   box-shadow: 0px 0px 9px -4px $shadow-color;
   border-radius: 6px;
+  background-color: $second-color;
   padding: 25px 15px;
   margin-bottom: 20px;
 
@@ -274,15 +278,81 @@ a {
 // style of single subject
 .myvid {
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   margin-bottom: 60px;
-  box-shadow: 0px 2px 9px -4px $shadow-color;
+  box-shadow: 0px 0px 9px -4px $shadow-color;
+  border-radius: 6px;
+  background-color: $second-color;
 }
 .vid-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  box-shadow: 0px 2px 9px -4px $shadow-color;
+  padding: 20px;
+  margin-bottom: 60px;
+  box-shadow: 0px 0px 9px -4px $shadow-color;
+  border-radius: 6px;
+  background-color: $second-color;
 }
+@media (max-width: 900px) {
+  .vid-info {
+    flex-direction: column;
+    text-align: center;
+    span {
+      margin: 10px;
+    }
+  }
+}
+.mytextarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  textarea {
+    border: none;
+    box-shadow: 0px 0px 9px -4px $shadow-color;
+    border-radius: 6px;
+    background-color: $second-color;
+  }
+  textarea::placeholder {
+    padding: 20px;
+  }
+  textarea:focus-visible {
+    outline: $second-text-color auto 1px;
+  }
+  input {
+    width: 190px;
+    height: 40px;
+    background-color: $main-color;
+    color: $second-color;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+  }
+  input:hover {
+    background-color: $main-text-color;
+  }
+}
+.notes {
+  h5 {
+    color: $third-text-color;
+  }
+  .myquestion {
+    padding: 20px;
+    box-shadow: 0px 0px 9px -4px $shadow-color;
+    border-radius: 6px;
+    background-color: $second-color;
+    .Q {
+      margin-bottom: 30px;
+      color: $notif-color;
+      b {
+        color: $fourth-text-color;
+      }
+    }
+    .answer {
+      color: $third-text-color;
+    }
+  }
+}
+
 // style of single subject
