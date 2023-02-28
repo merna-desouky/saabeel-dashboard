@@ -7,7 +7,7 @@ $second-text-color: #8e8e8e;
 $third-text-color: #272c8c;
 $fourth-text-color: #000000;
 $shadow-color: #00000033;
-$border-color: #0000001a;
+$border-color: #dcdcdc;
 //global style
 body {
   background-color: $background-color;
@@ -41,6 +41,22 @@ a {
     .profile-info {
       display: flex;
       align-items: center;
+      .notif {
+        position: relative;
+        .notif-count {
+          position: absolute;
+          bottom: 24px;
+          right: -9px;
+          border-radius: 50%;
+          background-color: $main-color;
+          color: $second-color;
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
       i {
         font-size: 40px;
         color: $notif-color;
@@ -109,21 +125,21 @@ a {
   }
   .menu-content {
     .closebtn {
-      // margin-top: 10px;
       display: inline;
-      margin-inline-start: 260px;
+      margin-inline-start: 270px;
       font-size: 25px;
       color: $second-text-color;
     }
     ul {
       padding: 0;
       margin-bottom: 20px;
-
+      li:not(:last-child) {
+        border-bottom: 1px solid $border-color;
+      }
       a {
         display: flex;
         align-items: center;
         padding: 20px;
-        box-shadow: -1px 4px 3px -4px $shadow-color;
         color: $second-text-color;
         background-color: $second-color;
         font-size: 20px;

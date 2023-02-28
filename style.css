@@ -33,6 +33,22 @@ a {
   display: flex;
   align-items: center;
 }
+.devo-navbar .navbar-content .profile-info .notif {
+  position: relative;
+}
+.devo-navbar .navbar-content .profile-info .notif .notif-count {
+  position: absolute;
+  bottom: 24px;
+  right: -9px;
+  border-radius: 50%;
+  background-color: #7e83cd;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .devo-navbar .navbar-content .profile-info i {
   font-size: 40px;
   color: #707070;
@@ -100,8 +116,8 @@ a {
 }
 .menu .menu-content .closebtn {
   display: inline;
-  -webkit-margin-start: 260px;
-          margin-inline-start: 260px;
+  -webkit-margin-start: 270px;
+          margin-inline-start: 270px;
   font-size: 25px;
   color: #8e8e8e;
 }
@@ -109,11 +125,13 @@ a {
   padding: 0;
   margin-bottom: 20px;
 }
+.menu .menu-content ul li:not(:last-child) {
+  border-bottom: 1px solid #dcdcdc;
+}
 .menu .menu-content ul a {
   display: flex;
   align-items: center;
   padding: 20px;
-  box-shadow: -1px 4px 3px -4px rgba(0, 0, 0, 0.2);
   color: #8e8e8e;
   background-color: #ffffff;
   font-size: 20px;
