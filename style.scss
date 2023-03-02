@@ -1,16 +1,21 @@
-$main-color: #7e83cd;
-$second-color: #ffffff;
-$background-color: #f9f9f9;
-$notif-color: #707070;
-$main-text-color: #5156be;
-$second-text-color: #8e8e8e;
-$third-text-color: #272c8c;
-$fourth-text-color: #000000;
-$shadow-color: #00000033;
-$border-color: #dcdcdc;
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400;500;600&display=swap");
+:root {
+  --main-color: #7e83cd;
+  --second-color: #ffffff;
+  --background-color: #f9f9f9;
+  --notif-color: #707070;
+  --main-text-color: #5156be;
+  --second-text-color: #8e8e8e;
+  --third-text-color: #272c8c;
+  --fourth-text-color: #000000;
+  --shadow-color: #00000033;
+  --border-color: #dcdcdc;
+  --overlay--color: #022335;
+}
+
 //global style
 body {
-  background-color: $background-color;
+  background-color: var(--background-color);
   font-family: "Alexandria", sans-serif;
 }
 .container-fluid {
@@ -41,6 +46,18 @@ a {
     .profile-info {
       display: flex;
       align-items: center;
+      .profile {
+        .dropdown-menu {
+          margin-top: 15px !important;
+          border: none;
+          background-color: var(--second-color);
+          box-shadow: 0px 2px 9px -4px var(--shadow-color);
+          border-radius: 6px;
+        }
+        .dropdown-toggle {
+          color: var(--notif-color);
+        }
+      }
       .notif {
         position: relative;
         .notif-count {
@@ -48,8 +65,8 @@ a {
           bottom: 24px;
           right: -9px;
           border-radius: 50%;
-          background-color: $main-color;
-          color: $second-color;
+          background-color: var(--main-color);
+          color: var(--second-color);
           width: 30px;
           height: 30px;
           display: flex;
@@ -59,7 +76,7 @@ a {
       }
       i {
         font-size: 40px;
-        color: $notif-color;
+        color: var(--notif-color);
       }
       img {
         height: 40px;
@@ -70,9 +87,9 @@ a {
 .mytabs {
   margin-bottom: 60px;
   .mytabs-content {
-    box-shadow: 0px 2px 9px -4px $shadow-color;
+    box-shadow: 0px 2px 9px -4px var(--shadow-color);
     border-radius: 6px;
-    background-color: $second-color;
+    background-color: var(--second-color);
     padding: 20px;
     ul {
       display: flex;
@@ -80,7 +97,7 @@ a {
       margin: 0px 20px;
       a {
         position: relative;
-        color: $second-text-color;
+        color: var(--second-text-color);
         font-size: 20px;
       }
       a.active:after {
@@ -91,11 +108,11 @@ a {
         width: 60%;
         height: 4px;
         border-radius: 20px;
-        background-color: $main-text-color;
+        background-color: var(--main-text-color);
       }
     }
     .active {
-      color: $main-text-color;
+      color: var(--main-text-color);
       background-color: transparent;
     }
   }
@@ -111,7 +128,7 @@ a {
   .background-overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(2, 35, 53, 0.4);
+    background-color: var(--overlay--color);
     opacity: 0;
     transition: all 0.5s ease-in-out;
   }
@@ -121,35 +138,35 @@ a {
     transition: all 0.5s ease-in-out;
     width: 300px;
     height: 100%;
-    background-color: $second-color;
+    background-color: var(--second-color);
   }
   .menu-content {
     .closebtn {
       display: inline;
       margin-inline-start: 270px;
       font-size: 25px;
-      color: $second-text-color;
+      color: var(--second-text-color);
     }
     ul {
       padding: 0;
       margin-bottom: 20px;
       li:not(:last-child) {
-        border-bottom: 1px solid $border-color;
+        border-bottom: 1px solid var(--border-color);
       }
       a {
         display: flex;
         align-items: center;
         padding: 20px;
-        color: $second-text-color;
-        background-color: $second-color;
+        color: var(--second-text-color);
+        background-color: var(--second-color);
         font-size: 20px;
         i {
           margin-inline-end: 10px;
         }
       }
       a:hover {
-        background-color: $main-color;
-        color: $second-color;
+        background-color: var(--main-color);
+        color: var(--second-color);
       }
     }
   }
@@ -174,6 +191,7 @@ a {
     display: none;
   }
   .devo-navbar {
+    margin: 20px 0px 60px 0px;
     .navbar-content {
       display: flex;
       flex-direction: row;
@@ -186,7 +204,7 @@ a {
       .mob-menu {
         display: flex;
         font-size: 25px;
-        color: $notif-color;
+        color: var(--notif-color);
       }
 
       .profile-info {
@@ -204,7 +222,7 @@ a {
           }
           i {
             font-size: 25px;
-            color: $notif-color;
+            color: var(--notif-color);
           }
         }
       }
@@ -215,9 +233,9 @@ a {
 .content {
   margin-bottom: 60px;
   .mycard {
-    box-shadow: 0px 0px 9px -4px $shadow-color;
+    box-shadow: 0px 0px 9px -4px var(--shadow-color);
     border-radius: 6px;
-    background-color: $second-color;
+    background-color: var(--second-color);
     padding: 25px 15px;
     display: flex;
     margin-bottom: 20px;
@@ -228,29 +246,30 @@ a {
       flex-direction: column;
       span {
         font-size: 20px;
-        color: $third-text-color;
+        color: var(--third-text-color);
       }
       p {
         font-size: 12px;
-        color: $second-text-color;
+        margin-top: 8px;
+        color: var(--second-text-color);
       }
     }
   }
   .mycard:hover {
-    background-color: $main-color;
+    background-color: var(--main-color);
     .card-content {
       span,
       p {
-        color: $second-color;
+        color: var(--second-color);
       }
     }
   }
 }
 //card exam page
 .card-exam {
-  box-shadow: 0px 0px 9px -4px $shadow-color;
+  box-shadow: 0px 0px 9px -4px var(--shadow-color);
   border-radius: 6px;
-  background-color: $second-color;
+  background-color: var(--second-color);
   padding: 25px 15px;
   margin-bottom: 20px;
 
@@ -264,17 +283,17 @@ a {
       align-items: center;
       span {
         font-size: 20px;
-        color: $third-text-color;
+        color: var(--third-text-color);
       }
       p {
         font-size: 12px;
-        color: $second-text-color;
+        color: var(--second-text-color);
       }
     }
     .exam-info {
       display: flex;
       justify-content: space-between;
-      color: $third-text-color;
+      color: var(--third-text-color);
       span {
         display: flex;
         align-items: center;
@@ -286,12 +305,12 @@ a {
   }
 }
 .card-exam:hover {
-  background-color: $main-color;
+  background-color: var(--main-color);
   .card-exam-content {
     span,
     p,
     i {
-      color: $second-color;
+      color: var(--second-color);
     }
   }
 }
@@ -302,9 +321,9 @@ a {
   text-align: center;
   padding: 20px;
   margin-bottom: 60px;
-  box-shadow: 0px 0px 9px -4px $shadow-color;
+  box-shadow: 0px 0px 9px -4px var(--shadow-color);
   border-radius: 6px;
-  background-color: $second-color;
+  background-color: var(--second-color);
 }
 .vid-info {
   display: flex;
@@ -312,9 +331,9 @@ a {
   align-items: center;
   padding: 20px;
   margin-bottom: 60px;
-  box-shadow: 0px 0px 9px -4px $shadow-color;
+  box-shadow: 0px 0px 9px -4px var(--shadow-color);
   border-radius: 6px;
-  background-color: $second-color;
+  background-color: var(--second-color);
 }
 @media (max-width: 900px) {
   .vid-info {
@@ -331,48 +350,48 @@ a {
   margin-bottom: 60px;
   textarea {
     border: none;
-    box-shadow: 0px 0px 9px -4px $shadow-color;
+    box-shadow: 0px 0px 9px -4px var(--shadow-color);
     border-radius: 6px;
-    background-color: $second-color;
+    background-color: var(--second-color);
   }
   textarea::placeholder {
     padding: 20px;
   }
   textarea:focus-visible {
-    outline: $second-text-color auto 1px;
+    outline: var(--second-text-color) auto 1px;
   }
   input {
     width: 190px;
     height: 40px;
-    background-color: $main-color;
-    color: $second-color;
+    background-color: var(--main-color);
+    color: var(--second-color);
     font-size: 18px;
     font-weight: 600;
     border: none;
     border-radius: 6px;
   }
   input:hover {
-    background-color: $main-text-color;
+    background-color: var(--main-text-color);
   }
 }
 .notes {
   h5 {
-    color: $third-text-color;
+    color: var(--third-text-color);
   }
   .myquestion {
     padding: 20px;
-    box-shadow: 0px 0px 9px -4px $shadow-color;
+    box-shadow: 0px 0px 9px -4px var(--shadow-color);
     border-radius: 6px;
-    background-color: $second-color;
+    background-color: var(--second-color);
     .Q {
       margin-bottom: 30px;
-      color: $notif-color;
+      color: var(--notif-color);
       b {
-        color: $fourth-text-color;
+        color: var(--fourth-text-color);
       }
     }
     .answer {
-      color: $third-text-color;
+      color: var(--third-text-color);
     }
   }
 }

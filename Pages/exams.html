@@ -19,12 +19,6 @@
       crossorigin="anonymous"
     />
     <!-- bootstrap style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -35,6 +29,21 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
+    <div
+      id="loading"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+      "
+    >
+      <img src="../assets/images/loading.gif" />
+    </div>
     <header>
       <nav>
         <div class="devo-navbar">
@@ -54,15 +63,33 @@
                     <a><img src="./../assets/images/logo.svg" /></a>
                   </div>
                   <div class="profile-info">
-                    <a>
+                    <a href="./../index.html">
                       <div class="notif me-4">
                         <div><i class="fa-regular fa-bell"></i></div>
-                        <span class="notif-count">1</span>
+                        <span class="notif-count">21</span>
                       </div>
                     </a>
-                    <a class="profile"
-                      ><img src="./../assets/images/profilePic.svg"
-                    /></a>
+
+                    <div class="profile">
+                      <div class="dropdown">
+                        <a
+                          class="dropdown-toggle"
+                          href="#"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <img src="./../assets/images/profilePic.svg" />
+                        </a>
+
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">حسابي</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#"> الخروج</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -167,179 +194,229 @@
         <div class="row">
           <h4 class="mb-4">اختر المادة</h4>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="mycard">
-              <div class="card-content">
-                <span>المحاسبة الإدارية 2023</span>
+            <a href="./../index.html">
+              <div class="mycard">
+                <div class="card-content">
+                  <span>المحاسبة الإدارية 2023</span>
+                </div>
+                <div><img src="./../assets/images/Group 331.svg" /></div>
               </div>
-              <div><img src="./../assets/images/Group 331.svg" /></div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="mycard">
-              <div class="card-content">
-                <span>محاسبة الضرائب 2023</span>
+            <a href="./../index.html">
+              <div class="mycard">
+                <div class="card-content">
+                  <span>المحاسبة الإدارية 2023</span>
+                </div>
+                <div><img src="./../assets/images/Group 331.svg" /></div>
               </div>
-              <div><img src="./../assets/images/Group 331.svg" /></div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="mycard">
-              <div class="card-content">
-                <span>محاسبة دولية</span>
+            <a href="./../index.html">
+              <div class="mycard">
+                <div class="card-content">
+                  <span>المحاسبة الإدارية 2023</span>
+                </div>
+                <div><img src="./../assets/images/Group 331.svg" /></div>
               </div>
-              <div><img src="./../assets/images/Group 331.svg" /></div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="mycard">
-              <div class="card-content">
-                <span>محاسبة الضرائب 2023</span>
+            <a href="./../index.html">
+              <div class="mycard">
+                <div class="card-content">
+                  <span>المحاسبة الإدارية 2023</span>
+                </div>
+                <div><img src="./../assets/images/Group 331.svg" /></div>
               </div>
-              <div><img src="./../assets/images/Group 331.svg" /></div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="mycard">
-              <div class="card-content">
-                <span>محاسبة الضرائب 2023</span>
+            <a href="./../index.html">
+              <div class="mycard">
+                <div class="card-content">
+                  <span>المحاسبة الإدارية 2023</span>
+                </div>
+                <div><img src="./../assets/images/Group 331.svg" /></div>
               </div>
-              <div><img src="./../assets/images/Group 331.svg" /></div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="mycard">
-              <div class="card-content">
-                <span>محاسبة الضرائب 2023</span>
+            <a href="./../index.html">
+              <div class="mycard">
+                <div class="card-content">
+                  <span>المحاسبة الإدارية 2023</span>
+                </div>
+                <div><img src="./../assets/images/Group 331.svg" /></div>
               </div>
-              <div><img src="./../assets/images/Group 331.svg" /></div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="row">
           <h4 class="mb-4 mt-5">آخر الاختبارات المضافة</h4>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="card-exam">
-              <div class="card-exam-content">
-                <div class="exam-name">
-                  <div>
-                    <span> اختبار شامل</span>
-                    <p><a>المحاسبة الإدارية 2023</a></p>
+            <a href="./../index.html">
+              <div class="card-exam">
+                <div class="card-exam-content">
+                  <div class="exam-name">
+                    <div>
+                      <span> اختبار شامل</span>
+                      <p>المحاسبة الإدارية 2023</p>
+                    </div>
+                    <div><img src="./../assets/images/Group 329.svg" /></div>
                   </div>
-                  <div><img src="./../assets/images/Group 329.svg" /></div>
-                </div>
-                <div class="exam-info">
-                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
-                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                  <div class="exam-info">
+                    <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                    ><span
+                      ><i class="fa-regular fa-file-lines"></i>30 سؤال</span
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="card-exam">
-              <div class="card-exam-content">
-                <div class="exam-name">
-                  <div>
-                    <span> اختبار شامل</span>
-                    <p><a>المحاسبة الإدارية 2023</a></p>
+            <a href="./../index.html">
+              <div class="card-exam">
+                <div class="card-exam-content">
+                  <div class="exam-name">
+                    <div>
+                      <span> اختبار شامل</span>
+                      <p>المحاسبة الإدارية 2023</p>
+                    </div>
+                    <div><img src="./../assets/images/Group 329.svg" /></div>
                   </div>
-                  <div><img src="./../assets/images/Group 329.svg" /></div>
-                </div>
-                <div class="exam-info">
-                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
-                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                  <div class="exam-info">
+                    <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                    ><span
+                      ><i class="fa-regular fa-file-lines"></i>30 سؤال</span
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="card-exam">
-              <div class="card-exam-content">
-                <div class="exam-name">
-                  <div>
-                    <span> اختبار شامل</span>
-                    <p><a>المحاسبة الإدارية 2023</a></p>
+            <a href="./../index.html">
+              <div class="card-exam">
+                <div class="card-exam-content">
+                  <div class="exam-name">
+                    <div>
+                      <span> اختبار شامل</span>
+                      <p>المحاسبة الإدارية 2023</p>
+                    </div>
+                    <div><img src="./../assets/images/Group 329.svg" /></div>
                   </div>
-                  <div><img src="./../assets/images/Group 329.svg" /></div>
-                </div>
-                <div class="exam-info">
-                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
-                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                  <div class="exam-info">
+                    <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                    ><span
+                      ><i class="fa-regular fa-file-lines"></i>30 سؤال</span
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="card-exam">
-              <div class="card-exam-content">
-                <div class="exam-name">
-                  <div>
-                    <span> اختبار شامل</span>
-                    <p><a>المحاسبة الإدارية 2023</a></p>
+            <a href="./../index.html">
+              <div class="card-exam">
+                <div class="card-exam-content">
+                  <div class="exam-name">
+                    <div>
+                      <span> اختبار شامل</span>
+                      <p>المحاسبة الإدارية 2023</p>
+                    </div>
+                    <div><img src="./../assets/images/Group 329.svg" /></div>
                   </div>
-                  <div><img src="./../assets/images/Group 329.svg" /></div>
-                </div>
-                <div class="exam-info">
-                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
-                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                  <div class="exam-info">
+                    <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                    ><span
+                      ><i class="fa-regular fa-file-lines"></i>30 سؤال</span
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="card-exam">
-              <div class="card-exam-content">
-                <div class="exam-name">
-                  <div>
-                    <span> اختبار شامل</span>
-                    <p><a>المحاسبة الإدارية 2023</a></p>
+            <a href="./../index.html">
+              <div class="card-exam">
+                <div class="card-exam-content">
+                  <div class="exam-name">
+                    <div>
+                      <span> اختبار شامل</span>
+                      <p>المحاسبة الإدارية 2023</p>
+                    </div>
+                    <div><img src="./../assets/images/Group 329.svg" /></div>
                   </div>
-                  <div><img src="./../assets/images/Group 329.svg" /></div>
-                </div>
-                <div class="exam-info">
-                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
-                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                  <div class="exam-info">
+                    <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                    ><span
+                      ><i class="fa-regular fa-file-lines"></i>30 سؤال</span
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="card-exam">
-              <div class="card-exam-content">
-                <div class="exam-name">
-                  <div>
-                    <span> اختبار شامل</span>
-                    <p><a>المحاسبة الإدارية 2023</a></p>
+            <a href="./../index.html">
+              <div class="card-exam">
+                <div class="card-exam-content">
+                  <div class="exam-name">
+                    <div>
+                      <span> اختبار شامل</span>
+                      <p>المحاسبة الإدارية 2023</p>
+                    </div>
+                    <div><img src="./../assets/images/Group 329.svg" /></div>
                   </div>
-                  <div><img src="./../assets/images/Group 329.svg" /></div>
-                </div>
-                <div class="exam-info">
-                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
-                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                  <div class="exam-info">
+                    <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                    ><span
+                      ><i class="fa-regular fa-file-lines"></i>30 سؤال</span
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div class="card-exam">
-              <div class="card-exam-content">
-                <div class="exam-name">
-                  <div>
-                    <span> اختبار شامل</span>
-                    <p><a>المحاسبة الإدارية 2023</a></p>
+            <a href="./../index.html">
+              <div class="card-exam">
+                <div class="card-exam-content">
+                  <div class="exam-name">
+                    <div>
+                      <span> اختبار شامل</span>
+                      <p>المحاسبة الإدارية 2023</p>
+                    </div>
+                    <div><img src="./../assets/images/Group 329.svg" /></div>
                   </div>
-                  <div><img src="./../assets/images/Group 329.svg" /></div>
-                </div>
-                <div class="exam-info">
-                  <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
-                  ><span><i class="fa-regular fa-file-lines"></i>30 سؤال</span>
+                  <div class="exam-info">
+                    <span><i class="fa-regular fa-clock"></i>15:30 دقيقة</span
+                    ><span
+                      ><i class="fa-regular fa-file-lines"></i>30 سؤال</span
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector("#loading").style.visibility = "visible";
+        } else {
+          document.querySelector("#loading").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+        }
+      };
+    </script>
     <!-- js for bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
